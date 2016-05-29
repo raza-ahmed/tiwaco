@@ -4,12 +4,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
-    public void clickButton(View view){
 
-        Log.i("MainActivity", "You Tapped the button");
+
+
+    public void clickButton(View view){
+        
+        EditText enteredText = (EditText) findViewById(R.id.editText);
+
+        Log.i("MainActivity", enteredText.getText().toString());
 
     }
 
